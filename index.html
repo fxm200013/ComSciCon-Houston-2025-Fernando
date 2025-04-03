@@ -2,57 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>3D Protein Gallery</title>
+  <title>3D Biochemistry Model Gallery</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 40px;
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+      color: #333;
     }
-    h1 {
-      text-align: center;
+
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
+
+    .logo {
+      height: 60px;
+    }
+
+    .title-block {
+      text-align: right;
+    }
+
+    .title-block h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .title-block p {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 40px;
+    }
+
     .model-link {
+      background-color: #ffffff;
       border: 1px solid #ccc;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
     }
+
     a {
-      font-size: 18px;
+      font-size: 20px;
       font-weight: bold;
       color: #0066cc;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     p {
-      margin-top: 5px;
-      color: #555;
+      margin-top: 8px;
+      font-size: 15px;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 0;
+      font-size: 13px;
+      color: #888;
     }
   </style>
 </head>
 <body>
 
-  <h1>Explore 3D Biochemistry Models</h1>
-  <p>Select a model to view its structure interactively in your browser.</p>
-  
-  <div class="model-link">
-    <a href="fluc/"> Fluc</a>
-    <p>Fluoride channel: overcome 2D figures limitations with a 3D model.</p>
-  </div>
+  <header>
+    <img src="lab-logo.png" alt="Lab Logo" class="logo">
+    <div class="title-block">
+      <h1>Interactive 3D Protein Gallery</h1>
+      <p>Fernando Montalvillo Ortega • ComSciCon Houston 2025</p>
+    </div>
+  </header>
 
-  <div class="model-link">
-    <a href="p1b/">P1B1-type ATPase</a>
-    <p> Copper primary active transporter: display conformational changes in a protein in a more detailed fashion.</p>
-  </div>
+  <main>
+    <p>Select a model below to explore its interactive 3D structure:</p>
 
-  <div class="model-link">
-    <a href="Nuc/">Nucleosome</a>
-    <p>Human Nucleosome: allow audiences to inspect complex systems at their own pace.</p>
-  </div>
+    <div class="model-link">
+      <a href="fluc/">Fluc</a>
+      <p>Fluoride channel: overcome 2D figure limitations with an interactive model.</p>
+    </div>
+
+    <div class="model-link">
+      <a href="p1b/">P1B1-type ATPase</a>
+      <p>Copper active transporter: visualize conformational changes in 3D.</p>
+    </div>
+
+    <div class="model-link">
+      <a href="Nuc/">Nucleosome</a>
+      <p>Human nucleosome: inspect complex systems at your own pace.</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Fernando Montalvillo Ortega – All Rights Reserved
+  </footer>
 
 </body>
 </html>
