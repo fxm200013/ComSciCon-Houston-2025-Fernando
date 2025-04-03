@@ -10,7 +10,6 @@
       background-color: #e0e1dd;
     }
     model-viewer {
-      exposure="0.2"
       width: 100vw;
       height: 100vh;
     }
@@ -18,13 +17,15 @@
 </head>
 <body>
 
-  <model-viewer 
-    src="p1b.glb" 
-    alt="P1B"
+  <model-viewer  
+    src="fluc-colored.glb" 
+    alt="Firefly Luciferase 3D model"
     auto-rotate 
     camera-controls
-    shadow-intensity="1">
-  </model-viewer>
-
+    exposure="0.4"
+    shadow-intensity="0.2"
+    environment-image="neutral">
+</model-viewer>
+  
 </body>
 </html>
